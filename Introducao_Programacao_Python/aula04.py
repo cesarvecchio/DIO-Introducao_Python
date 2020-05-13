@@ -1,6 +1,6 @@
 num = int(input("Entre com um numero: "))
 
- for num in range(101):
+for num in range(101):
      div = 0
      for x in range(1, num):
          resto = num % x
@@ -8,9 +8,9 @@ num = int(input("Entre com um numero: "))
          if resto == 0:
              div += 1
 
- if div == 2:
+if div == 2:
      print("O número {} é primo".format(num))
- else:
+else:
      print("O numero {} não é primo".format(num))
 
 print('-----')
