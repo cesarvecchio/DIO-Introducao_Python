@@ -20,10 +20,12 @@ class Calculadora:
         return valor_a / valor_b
 
 
-#instanciar uma classe
-calculadora = Calculadora()
+if __name__ == "__main__":
+        
+    #instanciar uma classe
+    calculadora = Calculadora()
 
-print(calculadora.soma(10, 3))
-print(calculadora.subtracao(19, 2))
-print(calculadora.multiplicaco(20, 4))
-print(calculadora.divisao(11, 55))
+    print(calculadora.soma(10, 3))
+    print(calculadora.subtracao(19, 2))
+    print(calculadora.multiplicaco(20, 4))
+    print(calculadora.divisao(11, 55))

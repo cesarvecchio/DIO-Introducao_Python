@@ -16,19 +16,22 @@ class Televisao:
     def diminui_canal(self):
         if self.ligada:
             self.canal -= 1
-        
-televisao = Televisao()
-print("Televisão está ligada: {}".format(televisao.ligada))
 
-televisao.power()
-print("Televisão está ligada: {}".format(televisao.ligada))
 
-televisao.power()
-print("Televisão está ligada: {}".format(televisao.ligada))
+#executara caso este arquivo esteja sendo executado, e não como uma importação
+if __name__ == '__main__':        
+    televisao = Televisao()
+    print("Televisão está ligada: {}".format(televisao.ligada))
 
-print("Canal: {}".format(televisao.canal))
-televisao.aumenta_canal()
-print("Canal: {}".format(televisao.canal))
-televisao.diminui_canal()
-televisao.diminui_canal()
-print("Canal: {}".format(televisao.canal))
+    televisao.power()
+    print("Televisão está ligada: {}".format(televisao.ligada))
+
+    televisao.power()
+    print("Televisão está ligada: {}".format(televisao.ligada))
+
+    print("Canal: {}".format(televisao.canal))
+    televisao.aumenta_canal()
+    print("Canal: {}".format(televisao.canal))
+    televisao.diminui_canal()
+    televisao.diminui_canal()
+    print("Canal: {}".format(televisao.canal))
